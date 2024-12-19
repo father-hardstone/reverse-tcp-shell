@@ -7,12 +7,12 @@ This project demonstrates the implementation of a Reverse TCP Shell using Python
 
 
 ## Features
-Reverse TCP Shell implemented in Python.
-Uses a Raspberry Pi Pico as a Rubber Ducky for automated payload delivery.
-Establishes a TCP connection for remote command execution.
-Provides insights into network vulnerabilities and secure coding practices.
-Includes visual indicators (e.g., blinking Caps Lock light) for payload status.
-Payload Description
+- Reverse TCP Shell implemented in Python.
+- Uses a Raspberry Pi Pico as a Rubber Ducky for automated payload delivery.
+- Establishes a TCP connection for remote command execution.
+- Provides insights into network vulnerabilities and secure coding practices.
+- Includes visual indicators (e.g., blinking Caps Lock light) for payload status.
+## Payload Description
 One component of this project is a Rubber Ducky payload written to deliver a reverse TCP shell on a Windows machine. Below is an overview of how the payload works:
 
 ## Payload Initiation:
