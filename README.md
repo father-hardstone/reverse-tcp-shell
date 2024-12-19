@@ -48,7 +48,7 @@ reverse-tcp-shell/
 ├── requirements.txt        # Python dependencies
 ├── LICENSE                 # Open-source license
 └── README.md               # Project documentation
-# License
+
 This project is licensed under the MIT License.
 
 # Contributing
