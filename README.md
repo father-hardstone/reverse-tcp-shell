@@ -20,7 +20,7 @@ One component of this project is a Rubber Ducky payload written to deliver a rev
 The Rubber Ducky script launches PowerShell in a hidden mode (powershell -w hidden).
 ## TCP Client Setup:
 
-The script establishes a TCP connection to the attacker's machine at a specified IP (192.168.100.93) and port (4444).
+The script establishes a TCP connection to the attacker's machine at a specified IP and port.
 A socket is created to send and receive TCP traffic.
 ## Command Execution:
 
@@ -38,18 +38,17 @@ Network setup with the correct IP address and open port for listening.
 Configure the Raspberry Pi Pico with the provided Ducky script in the lib/ folder.
 Run the Python server script on the attacker machine to listen for incoming  connections.
 Connect the Raspberry Pi Pico to the target machine, where it will execute the payload.
-### Folder Structure
-
-reverse-tcp-shell/
-├── lib/
-│   ├── ducky-payload.txt   # The main payload script
-│   ├── helpers.py          # Helper functions for the project
-├── server.py               # The Python script for the attacker machine
-├── requirements.txt        # Python dependencies
-├── LICENSE                 # Open-source license
-└── README.md               # Project documentation
 
 This project is licensed under the MIT License.
+
+#Ownership
+
+Here’s an example of an Ownership and Copyright Statement that you can include in your open-source project:
+
+Ownership and Copyright
+This project is owned and maintained by [Hardstone].
+
+Copyright © [2024] [Hardstone]. All rights reserved.
 
 # Contributing
 Contributions are welcome! Please fork the repository and create a pull request.
