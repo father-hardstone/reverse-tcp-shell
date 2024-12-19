@@ -46,9 +46,9 @@ This project is licensed under the MIT License.
 Here’s an example of an Ownership and Copyright Statement that you can include in your open-source project:
 
 Ownership and Copyright
-This project is owned and maintained by [Hardstone].
+This project is owned and maintained by `Hardstone`
 
-Copyright © [2024] [Hardstone]. All rights reserved.
+Copyright © `2024` `Hardstone`. All rights reserved.
 
 # Contributing
 Contributions are welcome! Please fork the repository and create a pull request.
