@@ -17,7 +17,7 @@ One component of this project is a Rubber Ducky payload written to deliver a rev
 
 ## Payload Initiation:
 
-The Rubber Ducky script launches PowerShell in a hidden mode (powershell -w hidden).
+The Rubber Ducky script launches PowerShell in a hidden mode (`powershell -w hidden`).
 ## TCP Client Setup:
 
 The script establishes a TCP connection to the attacker's machine at a specified IP and port.
@@ -35,7 +35,7 @@ A Raspberry Pi Pico configured as a Rubber Ducky.
 Python 3.x installed on the attacker machine.
 Network setup with the correct IP address and open port for listening.
 ### Steps
-Configure the Raspberry Pi Pico with the provided Ducky script in the lib/ folder.
+Configure the Raspberry Pi Pico with the provided Ducky script in the `lib/ folder`.
 Run the Python server script on the attacker machine to listen for incoming  connections.
 Connect the Raspberry Pi Pico to the target machine, where it will execute the payload.
 
