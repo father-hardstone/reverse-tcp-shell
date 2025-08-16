@@ -41,10 +41,6 @@ Connect the Raspberry Pi Pico to the target machine, where it will execute the p
 
 This project is licensed under the MIT License.
 
-#Ownership
-
-Here’s an example of an Ownership and Copyright Statement that you can include in your open-source project:
-
 Ownership and Copyright
 This project is owned and maintained by `Hardstone`
 
